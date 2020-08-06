@@ -1,6 +1,3 @@
-FROM node:12.18-alpine
-WORKDIR /src/app
-COPY . .
-RUN npm install 
-EXPOSE 4200
-CMD npm start
+FROM nginx:1.18
+RUN rm ./usr/share/nginx/html/index.html
+COPY ./dist/AzureDemoAngular ./usr/share/nginx/html
