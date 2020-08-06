@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AzureDemoAngular"
+    }
+  },
+  "defaultProject": "AzureDemoAngular",
+  "cli": {
+    "analytics": false
+  }
 }
